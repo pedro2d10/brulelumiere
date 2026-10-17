@@ -1,8 +1,8 @@
-use lightburn_io::{Category, ConfigStore};
+use bl_io::{Category, ConfigStore};
 use serde_json::json;
 
 fn main() {
-    let dir = std::env::temp_dir().join("lightburn-io-demo");
+    let dir = std::env::temp_dir().join("bl-io-demo");
     std::fs::create_dir_all(&dir).unwrap();
     let mut store = ConfigStore::new(&dir)
         .with_category(Category::Prefs)

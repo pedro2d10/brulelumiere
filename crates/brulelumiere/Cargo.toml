@@ -10,7 +10,7 @@ name = "brulelumiere"
 path = "src/main.rs"
 
 [dependencies]
-lightburn-io = { path = "../lightburn-io" }
+bl-io = { path = "../bl-io" }
 eframe = "0.37.0"
 geo = "0.33.1"
 roxmltree = "0.21.1"

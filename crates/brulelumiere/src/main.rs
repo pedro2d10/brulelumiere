@@ -1,7 +1,7 @@
 //! BrûleLumière — a standalone laser-project editor inspired by LightBurn.
 //!
 //! Vector drawing, cut layers, G-code, GRBL machine control and image tracing,
-//! persisted through the `lightburn-io` config store (atomic save, rotating
+//! persisted through the `bl-io` config store (atomic save, rotating
 //! backups, version guard).
 
 mod app;

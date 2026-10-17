@@ -1,13 +1,13 @@
 use std::fs;
 use std::path::PathBuf;
 
-use lightburn_io::{Category, ConfigStore, Error};
+use bl_io::{Category, ConfigStore, Error};
 use serde_json::json;
 
 /// Unique scratch dir per test, under the system temp dir.
 fn scratch(tag: &str) -> PathBuf {
     let dir = std::env::temp_dir().join(format!(
-        "lightburn-io-test-{}-{}-{}",
+        "bl-io-test-{}-{}-{}",
         tag,
         std::process::id(),
         std::time::SystemTime::now()
@@ -64,7 +64,7 @@ fn backups_rotate_and_cap() {
 
     // First save had no prior file; 5 subsequent saves produced backups,
     // capped at 3.
-    let backups = lightburn_io::list_backups(
+    let backups = bl_io::list_backups(
         &dir.join("backup"),
         Category::Prefs,
         "prefs",

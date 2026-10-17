@@ -1,11 +1,11 @@
 //! The BrûleLumière application: an eframe GUI over the typed [`Project`] model,
-//! persisted through [`lightburn_io::ConfigStore`] with LightBurn-style
+//! persisted through [`bl_io::ConfigStore`] with LightBurn-style
 //! atomic save, rotating backups and a version guard.
 
 use std::path::PathBuf;
 
 use eframe::egui;
-use lightburn_io::{ConfigStore, Error as IoError};
+use bl_io::{ConfigStore, Error as IoError};
 
 use crate::model::{CutLayer, Device, LayerType, Origin, Project, Units};
 use crate::shapes::{layer_rgb, Prim, Shape, ShapeKind, Vertex, XForm};

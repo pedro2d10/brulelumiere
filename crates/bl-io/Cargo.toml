@@ -1,12 +1,12 @@
 [package]
-name = "lightburn-io"
+name = "bl-io"
 version = "0.1.0"
 edition = "2021"
 description = "A JSON-document config store modeled on LightBurn's prefs I/O: configurable base dir, defaults layer, atomic save, rotating categorized backups, and a version guard."
 license = "MIT"
 
 [lib]
-name = "lightburn_io"
+name = "bl_io"
 path = "src/lib.rs"
 
 [dependencies]

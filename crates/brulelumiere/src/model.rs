@@ -3,7 +3,7 @@
 //! Field names are serialized to match LightBurn's own JSON keys (`CutList`,
 //! `DeviceList`, `maxPower`, `units`, `AutoSaveSeconds`) so the documents look
 //! familiar. Serde ignores unknown keys (such as the store's `__saveVersion`),
-//! so a round-trip through [`lightburn_io::ConfigStore`] is lossless for us.
+//! so a round-trip through [`bl_io::ConfigStore`] is lossless for us.
 
 use serde::{Deserialize, Serialize};
 
@@ -213,7 +213,7 @@ mod tests {
     #[ignore]
     fn seed_sample_project() {
         use crate::shapes::Shape;
-        use lightburn_io::ConfigStore;
+        use bl_io::ConfigStore;
 
         let base = std::env::var_os("XDG_CONFIG_HOME")
             .map(std::path::PathBuf::from)

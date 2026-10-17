@@ -1,4 +1,4 @@
-//! `lightburn-io` — a JSON-document configuration store modeled on how
+//! `bl-io` — a JSON-document configuration store modeled on how
 //! LightBurn performs preferences I/O.
 //!
 //! ## What LightBurn does (the model)
@@ -20,7 +20,7 @@
 //! The same mechanism, as a reusable store:
 //!
 //! ```no_run
-//! use lightburn_io::{ConfigStore, Category};
+//! use bl_io::{ConfigStore, Category};
 //! use serde_json::json;
 //!
 //! let mut store = ConfigStore::new("/home/pierre/.config/MyApp")

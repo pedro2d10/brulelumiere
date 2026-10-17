@@ -27,14 +27,14 @@ d'image dans une interface unique au style LightBurn.
 - **Machine** : connexion série GRBL, envoi de job, cadre, jog, pause/reprise.
 - **Navigation** : zoom molette, pan au bouton du milieu, zoom-ajusté / sélection.
 - **Stockage** fiable : `project.json` avec écriture atomique, sauvegardes
-  tournantes et garde de version (crate `lightburn-io`).
+  tournantes et garde de version (crate `bl-io`).
 
 ## Structure
 
 ```
 crates/
   brulelumiere/   application GUI (eframe/egui)
-  lightburn-io/   magasin de configuration : save atomique, backups, version guard
+  bl-io/        magasin de configuration : save atomique, backups, version guard
 ```
 
 ## Compiler et lancer
