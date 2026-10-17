@@ -2577,7 +2577,7 @@ impl BruleLumiereApp {
                 .default_width(360.0)
                 .show(ctx, |ui| {
                     ui.heading("BrûleLumière");
-                    ui.label("Éditeur de projet laser inspiré de LightBurn.");
+                    ui.label("Éditeur de projet laser vectoriel autonome.");
                     ui.separator();
                     ui.label("Calques de découpe, formes vectorielles, édition de nœuds,");
                     ui.label("transformations, import/export .lbrn2 · SVG · DXF,");
