@@ -1,0 +1,7 @@
+1. Édition de nœuds Bézier — poignées c0/c1 éditables, outil plume avec courbes, split/delete de sommet (comme UndoSplitPrimitive).
+2. Sélection/transformations — déplacer, redimensionner, pivoter (manipulation du XForm), snap à la grille, sélection multiple, groupes (Type="Group").
+3. Import/Export réels — lecture/écriture .lbrn2 (XML) pour l'interop LightBurn + import SVG/DXF (le binaire montre LWPOLYLINE, NURBS to Bezier).
+4. Calques de découpe complets — couleur par calque, vitesse/puissance/passes, ordre de découpe, mode Cut/Scan/Image.
+5. Aperçu de parcours (G-code) — simulation du trajet, génération GRBL, estimation de durée.
+6. Texte vectoriel (Type="Text"), tableau de formes (array), opérations booléennes.
+7. Connexion machine — port série, envoi de job, jog/cadre (zone la plus complexe, à garder pour la fin).
